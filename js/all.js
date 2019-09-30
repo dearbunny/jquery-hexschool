@@ -56,4 +56,10 @@ $(document).ready(function(){
         );
     });
 
+    // 動畫
+    $(".jq-animated").click(function(event) {
+        event.preventDefault();
+        $(this).toggleClass("rubberBand");
+    });
+
 });
