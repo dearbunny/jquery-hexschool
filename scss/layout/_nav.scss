@@ -1,0 +1,109 @@
+/* navbar */
+.header{
+    position: relative;
+    padding: 8px 4px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    height: auto;
+    transition: 0.3s ease;
+    @include mobile{
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $color-lightGray;
+        width: 200px;
+        height: 100%;
+        overflow: hidden;
+        transform: translateX(-200px);
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.3); 
+    }
+}
+.open .navbar-nav{   
+transform: translateX(0px);
+}
+
+.nav-item{
+    position: relative;
+    margin-left: 17px;
+    margin-right: 17px;
+    &:last-child{
+        margin-right: 0px;
+    }
+    @include mobile{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+.nav-link{
+    padding: 6px 10px;
+    border-bottom: solid 3px transparent;
+    transition: 0.3s;
+    &:hover,&.active{
+        border-color: $primary-color;
+    }
+    @include mobile{
+        display: block;
+        padding: 10px 10px;
+        &:hover,&.active{
+            color: #FFF;
+            background-color: $primary-color;
+        }
+    }
+}
+.dropdown-list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    @include mobile{
+        display: none;
+        position: static;
+    }
+}
+
+.dropdown-item a{
+    display: block;
+    padding: 6px 21px;
+    background-color: $color-lightGray;
+    &:hover,&:active{
+        color: #FFF!important;
+        background-color: $primary-color;
+    }
+    @include mobile{
+        width: auto;
+        background-color: #fff;
+        border-bottom: 1px solid $color-lightGray;
+    }
+}
+.menu-btn{
+    display: none;
+    @include mobile{
+        // position: absolute;
+        // right: 0px;
+        // top: 5px;
+        display: block;
+        padding: 4px 12px;
+        font-size: 30px;
+        color: $primary-color;
+        background-color:transparent;
+        outline: none;
+        &:active{
+            color: darken($primary-color, 5);
+        }
+    }
+}
+.icon-turn{
+    transition: all 0.3s;
+}
+.active .icon-turn{
+    transform:rotate(180deg);
+}

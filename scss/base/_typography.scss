@@ -1,0 +1,72 @@
+h2{
+    font-size: 2.25rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.125rem;
+}
+
+.text-hide{
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-primary{
+    color: $color-darkGreen;
+}
+.text-pink{
+    color: $color-pink;
+}
+.text-white{
+    color: #FFF;
+}
+
+.d-none{
+    display: none;
+}
+.d-black{
+    display: block;
+}
+
+// flex
+.d-flex{
+    display: flex;
+}
+.d-sm-flex{
+    @include mobile{
+        flex-direction: column;
+    }
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+
+// .row{
+//     display: flex;
+//     margin-left: -($gutter-width / 2);
+//     margin-right: -($gutter-width / 2);
+//     flex-wrap: wrap; 
+// }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

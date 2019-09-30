@@ -1,0 +1,28 @@
+///* table */
+
+.classList{
+    max-width: 840px;
+    @include pad{
+        padding-right: 20px;
+        padding-left: 20px; 
+    }
+}
+.table{
+    width: 100%;
+    thead th{
+        border-top: 1px solid #DDD;
+        background-color: $color-light;
+        vertical-align: bottom;
+    }
+    th,td{
+        width: 25%;
+        padding: 10px 20px;
+        border-bottom: 1px solid #DDD;
+    }
+    td{
+        vertical-align: middle;
+    }
+    tbody tr:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+}

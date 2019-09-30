@@ -1,0 +1,17 @@
+// 響應式斷點
+// Medium devices (tablets, 768px and up)
+
+@mixin pad {
+    @media (max-width: 768px){
+        @content
+    }
+}
+@mixin mobile {
+    @media (max-width: 576px){
+        @content
+    }
+}
+// 應用
+// @include pad{
+//     height: 34px;
+// }
