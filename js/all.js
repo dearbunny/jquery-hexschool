@@ -41,7 +41,7 @@ $(document).ready(function(){
     });
 
     // menu btn
-    $(".menu-btn").click(function(event) {
+    $(".jq-menu").click(function(event) {
         $("body").toggleClass("open");
     });
 

@@ -6184,6 +6184,18 @@ h4 {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .d-md-none {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .d-sm-black {
+    display: black;
+  }
+}
+
 .d-black {
   display: block;
 }
@@ -6229,6 +6241,10 @@ h4 {
 /* spacers */
 .w-50 {
   width: 50%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 @media (max-width: 576px) {
@@ -6514,20 +6530,17 @@ h4 {
   z-index: 3;
 }
 
-.navbar-nav {
+.navbar-collapse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: auto;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
 @media (max-width: 576px) {
-  .navbar-nav {
+  .navbar-collapse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -6547,7 +6560,28 @@ h4 {
   }
 }
 
-.open .navbar-nav {
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.open .navbar-nav, .open .navbar-collapse {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
@@ -6619,26 +6653,45 @@ h4 {
 @media (max-width: 576px) {
   .dropdown-item a {
     width: auto;
+    padding: 10px 21px;
     background-color: #fff;
     border-bottom: 1px solid #F6F6F6;
   }
 }
 
-.menu-btn {
+.menu-btn, .close-btn {
   display: none;
 }
 
 @media (max-width: 576px) {
-  .menu-btn {
-    display: block;
+  .menu-btn, .close-btn {
+    display: inline-block;
     padding: 4px 12px;
     font-size: 30px;
     color: #00CC99;
     background-color: transparent;
     outline: none;
   }
-  .menu-btn:active {
+  .menu-btn:active, .close-btn:active {
     color: #00b386;
+  }
+}
+
+.close-bar {
+  display: none;
+}
+
+.close-bar .close-btn {
+  padding: 0px 10px;
+}
+
+@media (max-width: 576px) {
+  .close-bar {
+    display: block;
+    text-align: right;
+    width: 100%;
+    line-height: 34px;
+    height: 34px;
   }
 }
 
