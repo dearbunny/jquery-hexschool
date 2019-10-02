@@ -6897,6 +6897,9 @@ a:hover, a:active {
 }
 
 .content textarea {
+  width: 100%;
+  min-height: 245px;
+  font-size: 16px;
   border-radius: 3px;
   border: 1px solid #E1E1E1;
 }
