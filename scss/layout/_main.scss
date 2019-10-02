@@ -30,6 +30,9 @@ a{
 }
 .color-facebook{
     color: #4460A0;
+    padding-right: 8px;
+    border-right: 1px solid #CCC;
+    margin-right: 8px;
     &:hover{
         color: lighten(#4460A0, 10);
     }
@@ -40,7 +43,6 @@ a{
 
 .socialBar{
     padding: 6px 12px;
-    text-align: right;
     background-color: $color-lightGray;
     .lines{
         font-size: 12px;

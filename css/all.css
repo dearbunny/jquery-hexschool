@@ -6233,6 +6233,12 @@ h4 {
           justify-content: space-between;
 }
 
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -6743,6 +6749,9 @@ a:hover, a:active {
 
 .color-facebook {
   color: #4460A0;
+  padding-right: 8px;
+  border-right: 1px solid #CCC;
+  margin-right: 8px;
 }
 
 .color-facebook:hover {
@@ -6755,7 +6764,6 @@ a:hover, a:active {
 
 .socialBar {
   padding: 6px 12px;
-  text-align: right;
   background-color: #F6F6F6;
 }
 
